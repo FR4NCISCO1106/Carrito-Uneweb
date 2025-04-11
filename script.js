@@ -74,7 +74,7 @@ document.getElementById('checkout').addEventListener('click', () => {
         alert('El carrito está vacío');
         return;
     }
-    fetch('procesar_compra.php' .{
+    fetch('procesar_compra.php' -{
 
         method: 'POST', 
         headers: {
