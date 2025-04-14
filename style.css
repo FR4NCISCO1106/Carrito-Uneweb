@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding : 0;
   box-sizing: border-box;
@@ -9,6 +9,7 @@
   font-family: Arial;
   margin: 20px;
   }
+
   img {
   max-width: 100%;
   }
@@ -56,6 +57,7 @@
   font-weight: 700;
   margin-bottom: 20px;
   }
+
   button {
   padding: 10px 30px;
   color: #FF3C2A;
@@ -65,9 +67,10 @@
   cursor: pointer;
   }
   
+  
   button:hover {
   color: #FFFFFF
-  background-color#FF3C2A
+  background-color #FF3C2A;
   }
   
   #cart-items {

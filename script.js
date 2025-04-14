@@ -11,7 +11,7 @@ function LoadProducts(){
             productDiv.setAttribute('data-id', product.id);
 
             const img = document.createElement('img');
-            img.src `images/${product.imagen}`;
+            img.src = `images/${product.imagen}`;
             img.alt = product.nombre;
             productDiv.appendChild(img);
 
