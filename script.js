@@ -2,10 +2,10 @@ function LoadProducts(){
     fetch('obtener_productos.php')
     .then(response => response.json())
     .then(products => { 
-        const productlist = document.getElementById('product-list');
-        productlist.innerHTML='';
+        const productList = document.getElementById('product-list');
+        productList.innerHTML='';
 
-        products.forEach(product => {
+        products.forEach( product => {
             const productDiv = document.createElement('div');
             productDiv.classList.add('product');
             productDiv.setAttribute('data-id', product.id);
@@ -32,7 +32,7 @@ function LoadProducts(){
                 addToCart(product);
             });
             productDiv.appendChild(button);
-            productlist.appendChild(productDiv);
+            productList.appendChild(productDiv);
         });
 
     });
@@ -53,7 +53,7 @@ function updateCart(){
         return;
     }
 
-    let total =0;
+    let total = 0;
     cart.forEach(item =>{
          const productDiv = document.createElement('div');
          productDiv.textContent = `${item.nombre} - $${item.precio}`;
@@ -74,7 +74,7 @@ document.getElementById('checkout').addEventListener('click', () => {
         alert('El carrito está vacío');
         return;
     }
-    fetch('procesar_compra.php' -{
+    fetch('procesar_compra.php' , {
 
         method: 'POST', 
         headers: {
@@ -87,6 +87,6 @@ document.getElementById('checkout').addEventListener('click', () => {
         cart=[];
         updateCart();
     });
-})
+});
 
 LoadProducts();

@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS maria;
-USE maria;
+CREATE DATABASE IF NOT EXISTS dbsdhsph313jz9;
+USE dbsdhsph313jz9;
 
 -- Crear tabla de productos
 CREATE TABLE productos (
@@ -20,9 +20,9 @@ CREATE TABLE compras (
 
 -- Insertar productos con imágenes
 INSERT INTO productos (nombre, precio, imagen) VALUES
-('Producto 1', 10.00, 'producto1.png'),
-('Producto 2', 15.00, 'producto2.png'),
-('Producto 3', 20.00, 'producto3.png'),
-('Producto 4', 25.00, 'producto4.png'),
-('Producto 5', 30.00, 'producto5.png'),
-('Producto 6', 35.00, 'producto6.png');
+('Jersey Bayern', 100.00, 'producto1.png'),
+('Jersey Inter Milán', 100.00, 'producto2.png'),
+('Jersey Arsenal', 80.00, 'producto3.png'),
+('Jersey Atlético Marid', 80.00, 'producto4.png'),
+('Jersey Athletic Club', 80.00, 'producto5.png'),
+('Jersey Chelsea', 80.00, 'producto6.png');

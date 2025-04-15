@@ -67,10 +67,10 @@
   cursor: pointer;
   }
   
-  
+
   button:hover {
-  color: #FFFFFF
-  background-color #FF3C2A;
+    color: #FFFFFF;
+    background-color: #FF3C2A;
   }
   
   #cart-items {
